@@ -189,17 +189,13 @@ h5.title {
 	background-color: #f7f7f7;
 }
 .portfolio-item {
-	float: left;
-	width: 31%;
-	margin-right: 3.5%;
-	margin-bottom: 50px;
 	background-color: #ffffff;
 }
 .portfolio-item span {
 	color: #737373;
 }
-.portfolio-item:nth-child(3n) {
-	margin-right: 0;
+.portfolio-item img {
+	width: 100%;
 }
 .portfolio-item:nth-last-child(1),
 .portfolio-item:nth-last-child(2),

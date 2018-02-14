@@ -101,7 +101,7 @@ a, a:hover {
 	height: 700px;
 	padding-top: 270px;
 	text-align: center;
-	background: #222 url(../img/home-bg.png) no-repeat center bottom;
+	background: #222 url(../img/bg.jpg) no-repeat center bottom;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -357,19 +357,8 @@ h5.title {
 	margin-top: 50px;
 	font-size: 16px/16px;
 }
-.logos-box {
-	height: 165px;
-}
-#logo1, #logo2, #logo3, #logo4 {
-	display: inline-block;
-}
-#logo1 {
-	padding-left: 65px;
-	padding-right: 5px;
-}
-#logo2, #logo3, #logo4 {
-	padding-left: 40px;
-	padding-top: 60px;
+.logo img {
+	width: 100%;
 }
 #contact {
 	height: 700px;
@@ -390,21 +379,7 @@ form {
 	display: inline-block;
 	padding-top: 80px;
 }
-#inp-1, #inp-2, #inp-3 {
-	width: 455px;
-	height: 50px;
-}
-#inp-2, #inp-3 {
-	margin-top: 30px;
-}
-#inp-4 {
-	margin-left: 485px;
-	margin-top: -210px;
-}
-
 #contact input {
-	width: 455px;
-	height: 50px;
 	border-radius: 3px;
 	border: 1px solid #888888;
 	padding-top: 20px;
@@ -432,8 +407,6 @@ textarea {
 	color: #bbbbbb;
 	padding-top: 20px;
 	padding-left: 20px;
-	width: 455px;
-	height: 210px;
 	border-radius: 3px;
 	border: 1px solid #888888;
 	resize: none;
@@ -442,10 +415,6 @@ textarea {
 #contact a {
 	color: #ffffff;
 	font-size: 22px;
-}
-#contact .btn {
-	margin-left: 350px;
-	margin-top: 30px;
 }
 .footer-box {
 	height: 90px;

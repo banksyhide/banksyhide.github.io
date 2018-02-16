@@ -146,7 +146,6 @@ a, a:hover {
 	text-align: center;
 }
 h2.title {
-	margin-bottom: 10px;
 	font-family: 'Comfortaa', cursive;
 	color: #222222;
 	text-transform: uppercase;
@@ -165,7 +164,7 @@ h5.title {
 }
 .portfolio-wrap,
 .about-wrap {
-	padding-top: 70px;
+	padding-top: 60px;
 }
 .services-wrap p {
 	font-size: 15px;
@@ -185,6 +184,12 @@ h5.title {
 .security {
 	background: url(../img/icon-locked.png) no-repeat center top;
 }
+.sale-img {
+	max-width: 100%;
+	height: auto;
+	display: flex;
+	align-self: center;
+}
 #portfolio {
 	text-align: center;
 	background-color: #f7f7f7;
@@ -195,8 +200,12 @@ h5.title {
 .portfolio-item span {
 	color: #737373;
 }
-.portfolio-item img {
-	width: 100%;
+.item {
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	align-items: center;
+	display: flex;
 }
 .portfolio-item:nth-last-child(1),
 .portfolio-item:nth-last-child(2),
@@ -240,8 +249,8 @@ h5.title {
 }
 .about-img img, .about-link {
 	display: inline-block;
-	width: 177px;
-	height: 177px;
+	width: 150px;
+	height: 150px;
 	border: 7px solid #f1f1f1;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -263,6 +272,59 @@ h5.title {
 	line-height: 30px;
 	font: bold 18px/24px Arial, sans-serif;
 	text-shadow: 0 1px rgba(0,0,0,0.3);
+}
+.text-left {
+	text-align: right;
+	padding: 15px;
+	background-color: #dcdcdc38;
+	height: 100px;
+	margin-top: 25px;
+}
+.text-right {
+	text-align: left;
+	padding: 15px;
+	background-color: #dcdcdc38;
+	height: 100px;
+	margin-top: 25px;
+}
+.about-right {
+	text-align: left;
+	padding-top: 0px;
+}
+.text-left:before {
+	background: url("http://www.karta.ua/user/img/hi-left-ar.png") no-repeat center;
+	right: -10px;
+	content: ' ';
+	width: 10px;
+	height: 15px;
+	position: absolute;
+	top: 41px;
+}
+.text-left:hover {
+	border: 2px solid #ffffff;
+	text-align: right;
+	padding: 15px;
+	background-color: #dcdcdc38;
+	height: 102px;
+	margin-top: 25px;
+}
+.text-right:before {
+	background: url("http://www.karta.ua/user/img/hi-left-ar.png") no-repeat center;
+	left: -10px;
+	content: ' ';
+	width: 10px;
+	height: 15px;
+	position: absolute;
+	top: 41px;
+	transform: rotate(180deg);
+}
+.text-right:hover {
+	border: 2px solid #ffffff;
+	text-align: left;
+	padding: 15px;
+	background-color: #dcdcdc38;
+	height: 102px;
+	margin-top: 25px;
 }
 #team {
 	text-align: center;
@@ -482,4 +544,15 @@ a#tw1, a#fb1, a#pn1, {
 	width: 41px;
 	height: 41px;
 	background: url(../img/g_h.png) no-repeat center top;
+}
+
+@media screen and (max-width: 767px) {
+	.home-header {
+		font-size: 30px;
+		width: 270px;
+	}
+	.btn {
+		padding: 15px 5px;
+		height: 55px;
+	}
 }

@@ -243,28 +243,23 @@ h5.title {
 .text-left {
 	text-align: left;
 }
-.about-img {
-	width: 30%;
-	
-}
-.about-img img, .about-link {
-	display: inline-block;
-	width: 150px;
+.about-img img {
 	height: 150px;
+	width: 150px;
 	border: 7px solid #f1f1f1;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	   -moz-border-radius: 50%;
 	     -o-border-radius: 50%;
 }
-.about-img:after {
-	content: '';
-	display: block;
-	width: 3px;
-	height: 100px;
-	margin: 0 auto;
-	background: #f1f1f1;
-}
+/*.about-img:after {*/
+	/*content: '';*/
+	/*display: block;*/
+	/*width: 3px;*/
+	/*height: 100px;*/
+	/*margin: 0 auto;*/
+	/*background: #f1f1f1;*/
+/*}*/
 .about-link {
 	padding-top: 40px;
 	background-color: #fed136;
@@ -274,23 +269,26 @@ h5.title {
 	text-shadow: 0 1px rgba(0,0,0,0.3);
 }
 .text-left {
-	text-align: right;
+	align-items: right;
+	align-self: right;
+	justify-content: right;
+	text-align: right !important;
 	padding: 15px;
 	background-color: #dcdcdc38;
-	height: 100px;
+	height: 102px;
 	margin-top: 25px;
 }
 .text-right {
-	text-align: left;
+	align-items: left;
+	align-self: left;
+	justify-content: left;
+	text-align: left !important;
 	padding: 15px;
 	background-color: #dcdcdc38;
-	height: 100px;
+	height: 102px;
 	margin-top: 25px;
 }
-.about-right {
-	text-align: left;
-	padding-top: 0px;
-}
+
 .text-left:before {
 	background: url("http://www.karta.ua/user/img/hi-left-ar.png") no-repeat center;
 	right: -10px;
@@ -302,7 +300,7 @@ h5.title {
 }
 .text-left:hover {
 	border: 2px solid #ffffff;
-	text-align: right;
+	text-align: left;
 	padding: 15px;
 	background-color: #dcdcdc38;
 	height: 102px;
@@ -325,6 +323,18 @@ h5.title {
 	background-color: #dcdcdc38;
 	height: 102px;
 	margin-top: 25px;
+}
+.img-left {
+	align-items: right;
+	justify-content: right;
+	align-self: right;
+	text-align: right;
+}
+.img-right {
+	align-items: left;
+	justify-content: left;
+	align-self: left;
+	text-align: left;
 }
 #team {
 	text-align: center;
@@ -356,7 +366,6 @@ h5.title {
 	color: #a0a0a0;
 }
 .team-social {
-	padding-top: 15px;
 }
 #tw, #fb, #pn {
 	margin-right: 10px;
@@ -544,6 +553,83 @@ a#tw1, a#fb1, a#pn1, {
 	width: 41px;
 	height: 41px;
 	background: url(../img/g_h.png) no-repeat center top;
+}
+.delivery-info {
+	text-align: center;
+	padding: 40px 0;
+}
+.delivery-info h1 {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 16px;
+	padding: 0 0 15px 0;
+	font-family: 'Comfortaa', cursive;
+}
+.delivery-info p {
+	padding: 15px 0;
+	color: #7d7d7d;
+}
+.delivery-info .phones {
+	color: #666666;
+	font-size: 24px;
+	margin-top: 15px;
+	font-weight: bold;
+}
+#footer {
+	background-color: #333333;
+	color: #ffffff;
+}
+#footer a {
+
+}
+.footer-ul {
+	padding: 40px 0;
+}
+.footer-li {
+	color: #ccc;
+	font-size: 14px;
+}
+.footer-li-upp {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0 0 15px 0;
+	font-weight: 300;
+	font-family: 'Comfortaa', cursive;
+}
+.footer-links a, .footer-links a:hover, .footer-li a, .footer-li a:hover {
+	color: #959595;
+}
+.footer-ul a, .footer-ul a:hover, .footer-li-upp a, .footer-li-upp a:hover {
+	color: #ffffff;
+}
+#footer-info {
+	background-color: #2a2a2a;
+	color: #959595;
+	font-size: 12px;
+}
+.footer-text {
+	font-size: 12px;
+	line-height: 16px;
+	color: #959595;
+	padding: 0 0 15px 0;
+}
+.copyright, .footer-links, .cart-payment {
+	padding: 15px;
+}
+.cart-payment {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.footer-links {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.copyright {
+	align-items: center;
+	display: inline-flex;
 }
 
 @media screen and (max-width: 767px) {

@@ -7,6 +7,9 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -31,13 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Работы</a>
+                        <a class="nav-link" href="#top">Работы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Резюме</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                        <a class="nav-link" href="#f-cont">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -48,20 +48,17 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-6 front-content">
-                <h1 class="h1-bold"><a href="" class="typewrite" data-period="3000"
-                                       data-type='[ "Привет, Я веб-девелопер.", "Посмотри мои работы и напиши мне.", "Еще тут? :)", "Мой телеграм: @n_barahvostova" ]'>
+                <h1 class="h1-bold">Наталья Б.</h1>
+                <h1 class="h1-bold"><a href="#" class="typewrite" data-period="3000"
+                                       data-type='[ "Привет, Я веб-девелопер.", "Посмотрите мои работы и напишите мне.", "Еще тут? :)", "Мой телеграм: @n_barahvostova" ]'>
                     <span class="wrap"></span>
                 </a></h1>
-                <h1 class="h1-bold">Наталья Барахвостова</h1>
-                <h1 class="p-default">Индийский волк, находящийся под угрозой исчезновения, был спасён от верной смерти
-                    после того, как его голова застряла в пластиковом контейнере. Хищник был обнаружен группой
-                    фотографов,
-                    которые снимали природу в районе озера в Нагпуре</h1>
+                <h1 class="p-default">Верстка макетов из PSD, верстка писем. Адаптивно, кроссбраузерно.</h1>
                 <div class="btns-container">
                     <div class="front__btn btn--active wow zoomIn" data-wow-duration=".5s" data-wow-delay=".3s"><a
-                            href="" class="btn--link">КОНТАКТЫ</a></div>
-                    <div class="front__btn btn--inactive"><a href="" class="btn--link link__contain">РЕЗЮМЕ <img
-                            src="img/core/pdf.svg" alt="PDF File Icon" class="pdf-icon"></a></div>
+                            href="#f-cont" class="btn--link">КОНТАКТЫ</a></div>
+                    <!--<div class="front__btn btn&#45;&#45;inactive"><a href="#top" class="btn&#45;&#45;link link__contain">РЕЗЮМЕ <img-->
+                    <!--src="build/img/core/pdf.svg" alt="PDF File Icon" class="pdf-icon"></a></div>-->
                 </div>
             </div>
             <div class="col-12 col-sm-6">
@@ -102,15 +99,17 @@
         <div class="row work__item">
             <div class="col-12 col-sm-5">
                 <div class="item-description">
-                    <p class="item-heading wow slideInLeft">Магазин украинского бренда женской одежды Shako</p>
-                    <p class="item-desc">Технологии, использованные на проекте:</p>
+                    <a href="http://shako-dev.panoramika.com.ua" class="item-heading__link" target="_blank"><p
+                            class="item-heading wow slideInLeft">Магазин украинского бренда женской одежды Shako</p></a>
+                    <p class="item-desc">В разработке. Технологии, используемые на проекте:</p>
                     <ul class="list list-unordered tech-list">
                         <li class="technology">HTML 5</li>
-                        <li class="technology">CSS3</li>
+                        <li class="technology">CSS3 + Sass</li>
+                        <li class="technology">Сборщик Gulp</li>
                         <li class="technology">jQuery + JS</li>
                         <li class="technology">PHP</li>
                         <li class="technology">Bootstrap 3 + Flexbox</li>
-                        <li class="technology">Разработка кастомной сетки для вывода категорий</li>
+                        <li class="technology">Разработка кастомной сетки для вывода раздела Lookbook</li>
                         <li class="technology">Адаптивность для > 320px</li>
                         <li class="technology">Кроссбраузерность с поддержкой Safari 5.1 +, IE 10 +</li>
                         <li class="technology">Установка верстки на движок Drupal</li>
@@ -128,18 +127,20 @@
         <div class="row work__item">
             <div class="col-12 col-sm-7">
                 <div class="img-wrapper">
-                    <img src="img/core/select-news.png" alt="" class="item__img">
+                    <a href="https://www.v9.ua/" target="_blank"><img src="img/core/select-news.png" alt=""
+                                                                      class="item__img"></a>
                     <div class="item__img-overlay wow slideInLeft">SELECT</div>
                 </div>
             </div>
             <div class="col-12 col-sm-5">
                 <div class="item-description">
-                    <p class="item-heading wow slideInRight">Not until we are lost do we begin to understand
-                        ourselves.</p>
+                    <a href="https://www.v9.ua/" class="item-heading__link" target="_blank"><p
+                            class="wow slideInRight item-heading">
+                        SELECT Sport</p></a>
                     <p class="item-desc">Технологии, использованные на проекте:</p>
                     <ul class="list list-unordered tech-list">
                         <li class="technology">HTML 5</li>
-                        <li class="technology">CSS3</li>
+                        <li class="technology">CSS3 + Sass</li>
                         <li class="technology">jQuery + JS</li>
                         <li class="technology">PHP</li>
                         <li class="technology">Bootstrap 3 + Flexbox</li>
@@ -152,23 +153,23 @@
         <div class="row work__item">
             <div class="col-12 col-sm-5">
                 <div class="item-description">
-                    <p class="item-heading wow slideInLeft">Not until we are lost do we begin to understand
-                        ourselves.</p>
+                    <a href="http://www.edufuture.biz/landing/" class="item-heading__link" target="_blank"><p
+                            class="item-heading wow slideInLeft">Лендинг для компании 7W</p></a>
                     <p class="item-desc">Технологии, использованные на проекте:</p>
                     <ul class="list list-unordered tech-list">
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
+                        <li class="technology">HTML 5</li>
+                        <li class="technology">CSS3 + Sass</li>
+                        <li class="technology">jQuery + JS</li>
+                        <li class="technology">Animate.css + WOWjs</li>
+                        <li class="technology">Bootstrap 4</li>
+                        <li class="technology">Адаптивность для > 320px</li>
                     </ul>
                 </div>
             </div>
             <div class="col-12 col-sm-7">
                 <div class="img-wrapper">
-                    <img src="img/core/edufuture-main.jpg" alt="" class="item__img">
+                    <a href="http://www.edufuture.biz/landing/" class="item-heading__link" target="_blank"><img
+                            src="img/core/edufuture-main.jpg" alt="" class="item__img"></a>
                     <div class="item__img-overlay wow slideInRight">7W</div>
                 </div>
             </div>
@@ -176,23 +177,24 @@
         <div class="row work__item">
             <div class="col-12 col-sm-7">
                 <div class="img-wrapper">
-                    <img src="img/core/blog-main.png" alt="" class="item__img">
+                    <a href="http://spivakovsky.com/" class="item-heading__link" target="_blank"><img
+                            src="img/core/blog-main.jpg"
+                            alt="" class="item__img"></a>
                     <div class="item__img-overlay wow slideInLeft">BLOG</div>
                 </div>
             </div>
             <div class="col-12 col-sm-5">
                 <div class="item-description">
-                    <p class="item-heading wow slideInRight">Not until we are lost do we begin to understand
-                        ourselves.</p>
+                    <a href="http://spivakovsky.com/" class="item-heading__link" target="_blank"><p
+                            class="item-heading wow slideInRight">Блог на Wordpress</p></a>
                     <p class="item-desc">Технологии, использованные на проекте:</p>
                     <ul class="list list-unordered tech-list">
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
+                        <li class="technology">HTML 5</li>
+                        <li class="technology">CSS3</li>
+                        <li class="technology">jQuery</li>
+                        <li class="technology">Bootstrap 3</li>
+                        <li class="technology">Установка верстки на движок Wordpress</li>
+                        <li class="technology">Установка плагинов</li>
                     </ul>
                 </div>
             </div>
@@ -214,7 +216,7 @@
             </div>
             <div class="col-12 col-sm-7">
                 <div class="img-wrapper">
-                    <img src="img/core/cases-education.png" alt="" class="item__img">
+                    <img src="img/core/7w-series.jpg" alt="" class="item__img">
                     <div class="item__img-overlay wow slideInRight">7W</div>
                 </div>
             </div>
@@ -222,40 +224,90 @@
         <div class="row work__item">
             <div class="col-12 col-sm-7">
                 <div class="img-wrapper">
-                    <img src="img/core/sempai-sushi.png" alt="" class="item__img">
-                    <div class="item__img-overlay wow slideInLeft">SEMPAI</div>
+                    <a href="http://grill-mat.gooodprice.top/" class="item-heading__link" target="_blank"><img
+                            src="img/core/grillmat.jpg"
+                            alt="" class="item__img"></a>
+                    <div class="item__img-overlay wow slideInLeft">Landing</div>
                 </div>
             </div>
             <div class="col-12 col-sm-5">
                 <div class="item-description">
-                    <p class="item-heading wow slideInRight">Верстка макета сайта службы доставки суши "Sempai
-                        Sushi"</p>
+                    <a href="http://grill-mat.gooodprice.top/" class="item-heading__link" target="_blank"><p
+                            class="item-heading wow slideInRight">Универсальный макет продающего лендинга</p></a>
                     <p class="item-desc">Технологии, использованные на проекте:</p>
                     <ul class="list list-unordered tech-list">
                         <li class="technology">HTML 5</li>
-                        <li class="technology">CSS3</li>
+                        <li class="technology">CSS3 + Sass</li>
+                        <li class="technology">Сборщик Gulp</li>
                         <li class="technology">jQuery + JS</li>
-                        <li class="technology">Bootstrap 4</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
-                        <li class="technology">технология</li>
+                        <li class="technology">Bootstrap 3</li>
+                        <li class="technology">Адаптивность для > 320px</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="row work__item">
+            <div class="col-12 col-sm-5">
+                <div class="item-description">
+                    <a href="artgallery/index.html" class="item-heading__link" target="_blank"><p
+                            class="item-heading wow slideInLeft">Сайт-визитка Багетной мастерской</p></a>
+                        <p class="item-desc">Технологии, использованные на проекте:</p>
+                        <ul class="list list-unordered tech-list">
+                            <li class="technology">HTML 5</li>
+                            <li class="technology">CSS3 + Sass</li>
+                            <li class="technology">jQuery + JS</li>
+                            <li class="technology">Bootstrap 3</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-7">
+                <div class="img-wrapper">
+                    <a href="artgallery/index.html" class="item-heading__link" target="_blank"><img
+                            src="img/core/art-new.jpg" alt="" class="item__img"></a>
+                    <div class="item__img-overlay wow slideInRight">Багеты</div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!--<div class="container-fluid">-->
+        <!--<div class="row mt-5 mb-5">-->
+            <!--<div class="work__carousel owl-carousel owl-theme">-->
+                <!--<div class="item car-item">-->
+                    <!--<img src="img/core/right_obj_02.png" alt="">-->
+                    <!--<p class="item-title">Индийский волк</p>-->
+                <!--</div>-->
+                <!--<div class="item car-item">-->
+                    <!--<img src="img/core/right_obj_02.png" alt="">-->
+                    <!--<p class="item-title">Индийский волк</p>-->
+                <!--</div>-->
+                <!--<div class="item car-item">-->
+                    <!--<img src="img/core/right_obj_02.png" alt="">-->
+                    <!--<p class="item-title">Индийский волк</p>-->
+                <!--</div>-->
+                <!--<div class="item car-item">-->
+                    <!--<img src="img/core/right_obj_02.png" alt="">-->
+                    <!--<p class="item-title">Индийский волк</p>-->
+                <!--</div>-->
+                <!--<div class="item car-item">-->
+                    <!--<img src="img/core/right_obj_02.png" alt="">-->
+                    <!--<p class="item-title">Индийский волк</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="container">
         <div id="emoji" class="emoji"></div>
     </div>
 </div>
-<div class="footer">
+<div class="footer" id="f-cont">
     <div class="container">
         <div class="f-contacts">
             <div class="contacts-left">
                 <p class="item-heading wow slideInLeft">Контакты</p>
-                <p class="item-desc">Технологии, использованные на проекте:</p>
-                <p class="item-desc">n.barahvostova@gmail.com</p>
-                <p class="item-desc">405984358345</p>
+                <p class="item-desc">Telegram: @n_barahvostova</p>
+                <p class="item-desc"><a href="mailto:n.barahvostova@gmail.com" class="item-desc__link">Email:
+                    n.barahvostova@gmail.com</a></p>
+                <p class="item-desc">Viber: +380936549123</p>
             </div>
             <div class="bg-holder bg__img-bottom" data-wow-delay="2s">
                 <img src="img/core/bottom_obj_01.png" alt="">
@@ -264,11 +316,11 @@
                 <img src="img/core/right_obj_02.png" alt="">
             </div>
             <div class="contact-right">
-                <form name="feedback" action="" method="post" class="f-form">
-                    <input class="f-input" type="text" name="from" placeholder="Ваш email" required/>
-                    <textarea class="f-textarea" name="message" placeholder="Вашe сообщение" required></textarea>
-                    <button type="submit" name="send" class="btn--inactive f-btn">Send</button>
-                </form>
+                <!--<form name="feedback" action="" method="post" class="f-form">-->
+                <!--<input class="f-input" type="text" name="from" placeholder="Ваш email" required/>-->
+                <!--<textarea class="f-textarea" name="message" placeholder="Вашe сообщение" required></textarea>-->
+                <!--<button type="submit" name="send" class="btn&#45;&#45;inactive f-btn">Send</button>-->
+                <!--</form>-->
             </div>
         </div>
     </div>
@@ -280,6 +332,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -288,7 +341,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
 
 <script src="https://cdnjs.com/libraries/bodymovin" type="text/javascript"></script>
 <script src="js/bodymovin.js"></script>

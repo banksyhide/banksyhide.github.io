@@ -1,0 +1,431 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* BAGET LANDING */
+
+
+/* FONTS */
+/*@font-face {*/
+    /*font-family: Heuristica-Regular;*/
+    /*src: url('../fonts/Heuristica-Regular.otf') format('opentype');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: Heuristica-Italic;*/
+    /*src: url('../fonts/Heuristica-Italic.otf') format('opentype');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: Heuristica-Bold;*/
+    /*src: url('../fonts/Heuristica-Bold.otf') format('opentype');*/
+/*}*/
+/*@font-face {*/
+    /*font-family: Heuristica-BoldItalic;*/
+    /*src: url('../fonts/Heuristica-BoldItalic.otf') format('opentype');*/
+/*}*/
+
+@font-face {
+    font-family: 'Heuristica-Regular';
+    src: url('../fonts/Heuristica-Regular.eot');
+    src: url('../fonts/Heuristica-Regular.woff2') format('woff2'),
+    url('../fonts/Heuristica-Regular.woff') format('woff'),
+    url('../fonts/Heuristica-Regular.ttf') format('truetype'),
+    url('../fonts/Heuristica-Regular.svg#Heuristica-Regular') format('svg'),
+    url('../fonts/Heuristica-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heuristica-Italic';
+    src: url('../fonts/Heuristica-Italic.eot');
+    src: url('../fonts/Heuristica-Italic.woff2') format('woff2'),
+    url('../fonts/Heuristica-Italic.woff') format('woff'),
+    url('../fonts/Heuristica-Italic.ttf') format('truetype'),
+    url('../fonts/Heuristica-Italic.svg#Heuristica-Italic') format('svg'),
+    url('../fonts/Heuristica-Italic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heuristica-BoldItalic';
+    src: url('../fonts/Heuristica-BoldItalic.eot');
+    src: url('../fonts/Heuristica-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Heuristica-BoldItalic.woff') format('woff'),
+    url('../fonts/Heuristica-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Heuristica-BoldItalic.svg#Heuristica-BoldItalic') format('svg'),
+    url('../fonts/Heuristica-BoldItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Heuristica-Bold';
+    src: url('../fonts/Heuristica-Bold.eot');
+    src: url('../fonts/Heuristica-Bold.woff2') format('woff2'),
+    url('../fonts/Heuristica-Bold.woff') format('woff'),
+    url('../fonts/Heuristica-Bold.ttf') format('truetype'),
+    url('../fonts/Heuristica-Bold.svg#Heuristica-Bold') format('svg'),
+    url('../fonts/Heuristica-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+/* TEXT STYLES */
+
+body {
+    font-family: 'Heuristica-Regular', sans-serif;
+    font-weight: 400;
+}
+.text-reg {
+    font-family: 'Heuristica-Regular', sans-serif;
+    font-weight: 400;
+}
+.text-ital {
+    font-family: 'Heuristica-Italic', sans-serif;
+    font-style: italic;
+}
+.text-bold {
+    font-family: 'Heuristica-Bold', sans-serif;
+    font-weight: 700;
+}
+.text-bold-ital {
+    font-family: 'Heuristica-BoldItalic', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.h1 {
+    font-size: 40px;
+}
+.h3 {
+    font-size: 30px;
+}
+li {
+    padding: 10px 0;
+}
+.text-light {
+    color: #ffffff;
+}
+.text-dark {
+    color: #000000;
+}
+
+/* HEADER */
+#header {
+    background: url("../img/bg.png") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.h-text {
+    padding: 125px 0 65px;
+}
+.h-btn {
+    color: #ffffff;
+    max-width: 255px;
+    max-height: 56px;
+    background-color: #451717;
+    text-align: center;
+    padding: 20px 0;
+}
+.btn-link {
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 75px;
+}
+.btn-link:hover, .btn-link:active, .btn-link:focus {
+    color: #fac37a;
+    font-size: 24px;
+    text-decoration: none;
+}
+.h-bottom {
+    padding: 0 0 200px 0;
+}
+
+/* PARTNERS BLOCK */
+
+.p-content {
+    text-align: center;
+    padding: 100px 0 50px;
+}
+.p-partners {
+    margin: 55px 0 0 0;
+}
+.p-title {
+    margin: 0 0 25px 0;
+    font-size:20px;
+}
+.p-img {
+    margin: 0 50px 0 0;
+}
+
+/* ACHIEVEMENTS */
+
+#achievments {
+    background-color: #e4e4e4;
+}
+.a-content {
+    padding: 30px 0 60px 0;
+    text-align: left;
+}
+.a-row {
+    padding: 35px 0 0;
+}
+.a-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.a-text {
+    padding: 0 0 0 20px;
+}
+
+/* WORKS */
+
+.w-title {
+    text-align: center;
+    margin: 40px 0;
+}
+.w-title p {
+    font-size: 26px;
+    padding: 30px 0 0 0;
+}
+.w-icons {
+    margin: 0 0 40px 0;
+}
+.icon {
+    width: 100%;
+}
+.icon-title {
+    font-size:20px;
+    margin: 20px 0;
+    color: #000;
+    text-decoration: none;
+}
+.icon-cont:hover, .icon-cont:active, .icon-cont:focus{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* GALLERY */
+
+#gallery {
+    background: url("../img/bg5.jpg") repeat;
+    color: #ffffff;
+    padding: 70px 0 30px 0;
+}
+.g-title {
+    text-align: center;
+    margin: 40px 0;
+}
+.g-title p {
+    font-size: 26px;
+    padding: 30px 0 0 0;
+}
+.icon-caption {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 65px;
+    min-height:128px;
+}
+#gallery .icon-title, .icon-subtitle {
+    margin: 0 0 10px;
+    color: #000;
+}
+.g-row {
+    margin: 0 0 80px 0;
+}
+
+/* EXAMPLE */
+#example {
+    background-color: #e5dfcd;
+}
+.e-ul {
+    margin:30px 0 0 0;
+}
+
+/* OWNER */
+#owner {
+    padding: 100px 0;
+}
+.o-caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 0 0;
+}
+
+/* CLIENTS */
+#clients {
+    background-color: #330f0f;
+    padding: 60px 0;
+}
+.c-title p {
+    font-size: 26px;
+    padding: 30px 0 0 0;
+}
+.c-row {
+    padding:34px 0 0 0;
+}
+.c-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.c-item .icon-subtitle {
+    padding:10px 0 0 0;
+}
+
+/* ABOUT-US */
+#about-us {
+    background-color: #dad9db;
+}
+.us-text {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 100px 0;
+}
+
+/* REVIEW */
+
+#review {
+    background: url("../img/bg5.jpg") repeat;
+    color: #ffffff;
+    padding: 70px 0 30px 0;
+}
+.r-title {
+    text-align: center;
+    margin: 40px 0;
+}
+.r-title p {
+    font-size: 26px;
+    padding: 30px 0 0 0;
+}
+.review-caption {
+    background-color: #fff;
+    color: #000000;
+    padding: 20px 45px 30px 30px;
+}
+.review-author {
+    padding: 30px 0 0 0;
+}
+
+/* owl dots */
+
+.owl-carousel button.owl-dot {
+    background-color: #fac37a;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    border: 3px solid #fac37a;
+    margin: 0 2px;
+}
+.owl-carousel button.active {
+    background-color: #6d6161;
+    height: 18px;
+    width: 18px;
+    border-radius: 9px;
+    border: 3px solid #fac37a;
+}
+#review i.fa {
+    font-size: 4em;
+}
+.owl-nav {
+    position: relative;
+    top: -150px;
+}
+.owl-prev {
+    position: absolute;
+    left: 0;
+}
+.owl-next {
+    position: absolute;
+    right: 0;
+}
+.owl-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* GEO MAP */
+
+#geo {
+
+}
+.g-title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 26px;
+}
+.g-img {
+    background: url("../img/shrilanka.png") no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 250px;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #431c1e;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.f-social .f-link {
+    padding: 0 10px;
+}
+.f-link {
+    color: #ffffff;
+}
+.f-link:hover, .f-link:active, .f-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.f-phone {
+    font-size: 16px;
+}

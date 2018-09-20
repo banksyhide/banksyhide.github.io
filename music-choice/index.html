@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Музыка для работы</title>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <h3 class="display-4 text-center">Музыка для работы</h3>
+        <p class="text-center lead">Notashka App 1.01</p>
+    </div>
+</div>
+<div class="main-content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="btns-container">
+                <div class="col-12">
+                    <p class="lead text-center">Кто ты сегодня?</p>
+                </div>
+                <div class="col-12 btns-row">
+                    <button class="btn btn-info" id="calm"><i class="fa fa-paw" aria-hidden="true"></i>
+                        Сонный котик
+                    </button>
+                    <button class="btn btn-warning" id="adventure"><i class="fa fa-bicycle" aria-hidden="true"></i>
+                        Искатель приключений
+                    </button>
+                </div>
+                <div class="col-12 btns-row">
+                    <button class="btn btn-success"><i class="fa fa-usd" aria-hidden="true"></i>
+                        Средневековый бизнесмен
+                    </button>
+                    <button class="btn btn-danger" id="omar"><i class="fa fa-smile-o" aria-hidden="true"></i>
+                        Я Омар
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row calm-container m-5">
+            <iframe id="calm-frame" width="560" height="315" src="https://www.youtube.com/embed/h9WudJDkeBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="m-2">
+                <button onclick="document.location.reload()" class="btn btn-primary">Нужна другая музыка</button>
+                <button onclick="calmVideoChange()" class="btn btn-primary">Следущая песня</button>
+            </div>
+        </div>
+        <div class="row omar-container m-5">
+            <iframe id="omar-frame" width="560" height="315" src="https://www.youtube.com/embed/0aw0M5CBqT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="m-2">
+                <button onclick="document.location.reload()" class="btn btn-primary">Нужна другая музыка</button>
+                <button onclick="omarVideoChange()" class="btn btn-primary">Следущая песня</button>
+            </div>
+        </div>
+        <!--<div class="row adventure-container m-5">-->
+            <!--<iframe id="adventure-frame" width="560" height="315" src="https://www.youtube.com/embed/h9WudJDkeBI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+            <!--<div class="m-2">-->
+                <!--<button onclick="document.location.reload()" class="btn btn-primary">Нужна другая музыка</button>-->
+                <!--<button onclick="omarVideoChange()" class="btn btn-primary">Следущая песня</button>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<script>
+
+    /* calm playlist */
+
+    let calmA = 'https://www.youtube.com/embed/xFjpTF4-PgI?autoplay=1';
+    let calmB = 'https://www.youtube.com/embed/mIYzp5rcTvU?autoplay=1';
+    let calmC = 'https://www.youtube.com/embed/9ou1pl0XNRs?autoplay=1';
+    let calmD = 'https://www.youtube.com/embed/6HZdlZXlXUs?autoplay=1';
+    let calmE = 'https://www.youtube.com/embed/b8pDE7PDJHY?autoplay=1';
+    let calmF = 'https://www.youtube.com/embed/MgApT3VHtZY?autoplay=1';
+
+    let calmArr = [calmA, calmB, calmC, calmD, calmE, calmF];
+
+    function calmVideoChange() {
+        let calmRandVideo = calmArr[Math.floor(Math.random()*calmArr.length)];
+        document.getElementById('calm-frame').src = calmRandVideo;
+    }
+
+    $(document).ready(function () {
+        $('#calm').on('click', function () {
+            $('.calm-container').toggleClass('visible');
+            $('.btns-container').css('display', 'none');
+        });
+    });
+
+    /* omar playlist */
+
+    let omarA = 'https://www.youtube.com/embed/0aw0M5CBqT8?autoplay=1';
+    let omarB = 'https://www.youtube.com/embed/AS_uBieKtmg?autoplay=1';
+    let omarC = 'https://www.youtube.com/embed/wOBnq0Ewz5k?autoplay=1';
+    let omarD = 'https://www.youtube.com/embed/_kO3bR7q7pk?autoplay=1';
+    let omarE = 'https://www.youtube.com/embed/sr8fjIXygWU?autoplay=1';
+    let omarF = 'https://www.youtube.com/embed/yQmGaV6MnVE?autoplay=1';
+    let omarG = 'https://www.youtube.com/embed/TiDZHgzpxTw?autoplay=1';
+    let omarL = 'https://www.youtube.com/embed/y0D4SPN1Iq0?autoplay=1';
+    let omarK = 'https://www.youtube.com/embed/kuTAoRaKTYw?autoplay=1';
+    let omarM = 'https://www.youtube.com/embed/BIN7YtejKxY?autoplay=1';
+    let omarO = 'https://www.youtube.com/embed/ySfoChOiCEU?autoplay=1';
+    let omarN = 'https://www.youtube.com/embed/f9iE8b8jh2A?autoplay=1';
+    let omarP = 'https://www.youtube.com/embed/IwzUs1IMdyQ?autoplay=1';
+    let omarQ = 'https://www.youtube.com/embed/dm9OwK9oBNY?autoplay=1';
+    let omarR = 'https://www.youtube.com/embed/mDMrZXujgsI?autoplay=1';
+
+    let omarArr = [omarA, omarB, omarC, omarD, omarE, omarF, omarG, omarL, omarK, omarM, omarO, omarN, omarP, omarQ, omarR];
+
+    function omarVideoChange() {
+        let omarRandVideo = omarArr[Math.floor(Math.random()*omarArr.length)];
+        document.getElementById('omar-frame').src = omarRandVideo;
+    }
+
+    $(document).ready(function () {
+        $('#omar').on('click', function () {
+            $('.omar-container').toggleClass('visible');
+            $('.btns-container').css('display', 'none');
+        });
+    });
+
+    /* omar playlist */
+
+    let advA = 'https://www.youtube.com/embed/xFjpTF4-PgI?autoplay=1';
+    let advB = 'https://www.youtube.com/embed/mIYzp5rcTvU?autoplay=1';
+    let advC = 'https://www.youtube.com/embed/9ou1pl0XNRs?autoplay=1';
+    let advD = 'https://www.youtube.com/embed/6HZdlZXlXUs?autoplay=1';
+    let advE = 'https://www.youtube.com/embed/b8pDE7PDJHY?autoplay=1';
+    let advF = 'https://www.youtube.com/embed/MgApT3VHtZY?autoplay=1';
+
+    let advArr = [advA, advB, advC, advD, advE, advF];
+
+    function advVideoChange() {
+        let advRandVideo = advArr[Math.floor(Math.random()*advArr.length)];
+        document.getElementById('adventure-frame').src = advRandVideo;
+    }
+
+    $(document).ready(function () {
+        $('#adventure').on('click', function () {
+            $('.adventure-container').toggleClass('visible');
+            $('.btns-container').css('display', 'none');
+        });
+    });
+</script>
+</body>
+</html>

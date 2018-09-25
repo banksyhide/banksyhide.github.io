@@ -3,17 +3,17 @@ if(isset($_POST['contact_name'])){
    if(isset($_POST['contact_email'])){ 
    // grab recaptcha library
 	require_once "recaptchalib.php";
-	$secret = "6Ldm80AUAAAAAKz3SsZCb0QuO8qLKu8OsL5Oyhc0";
+	$secret = "6LcV9nEUAAAAANdSFjcMYHXT9EZD5jARmF1vUhit";
 	$response = null;
 	$reCaptcha = new ReCaptcha($secret);
-	// if submitted check response
-//	if ($_POST["g-recaptcha-response"]) {
-//		$response = $reCaptcha->verifyResponse(
-//			$_SERVER["REMOTE_ADDR"],
-//			$_POST["g-recaptcha-response"]
-//		);
-//	}
-	if ($response != null /*&& $response->success*/) {
+//	 if submitted check response
+	if ($_POST["g-recaptcha-response"]) {
+		$response = $reCaptcha->verifyResponse(
+			$_SERVER["REMOTE_ADDR"],
+			$_POST["g-recaptcha-response"]
+		);
+	}
+	if ($response != null && $response->success) {
          ob_start();
         $to = "n.barahvostova@gmail.com";
          //$to = "info@khfinancial.ca";

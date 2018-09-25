@@ -13,7 +13,7 @@ if(isset($_POST['contact_name'])){
 //			$_POST["g-recaptcha-response"]
 //		);
 //	}
-	if ($response != null && $response->success) {
+	if ($response != null /*&& $response->success*/) {
          ob_start();
         $to = "n.barahvostova@gmail.com";
          //$to = "info@khfinancial.ca";

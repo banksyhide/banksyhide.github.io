@@ -1,0 +1,138 @@
+.pricing-table table {
+    background: #fff;
+    margin-bottom: 30px;
+    display: table;
+    border: 1px solid #56c5d0;
+}
+.pricing-table th h2 {
+    font-size:1.4em;
+    text-transform:uppercase;
+    font-weight:bold
+}
+.pricing-table th h1 {
+    font-size:3em;
+    font-weight:800;
+    line-height: .6;
+}
+.pricing-table td, .pricing-table th {
+    padding: 0.75em .75em;
+}
+.pricing-table td {
+    height: 69px;
+}
+.pricing-table.accounting td {
+    height:40px;
+}
+	.pricing-table td.err {
+		background-color: #e992b9;
+		color: #fff;
+		font-size: 0.75em;
+		text-align: center;
+		line-height: 1;
+	}
+.pricing-table th {
+    background-color: #56c5d0;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+.pricing-table th:first-child {
+    width:140px;
+    font-size: 14px;
+    line-height:1.111;
+    text-transform:uppercase
+}
+.pricing-table th:nth-child(2) {
+    background: #69f2ff
+}
+.pricing-table th:nth-child(3) {
+    background: #63e2ef
+}
+.pricing-table th:nth-child(4) {
+    background: #5cd3df
+}
+.pricing-table th:nth-child(5) {
+    background:#56c5d0
+}
+.pricing-table th:nth-child(6) {
+    background: #4fb5bf
+}
+.pricing-table .title-th {
+    font-size:22px!important;
+    text-transform:uppercase;
+}
+.pricing-table p {
+    font-size:14px;
+    line-height:1.111
+}
+.extended {
+    width:20%
+}
+.checked {
+    background:url(../img/checkmark2.png) no-repeat;
+    background-size:contain;
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+}
+.pricing-table tbody th {
+	background-color: #56c5d0;
+}
+.pricing-table tbody tr:nth-child(2n-1) {
+    background-color: #FBFBFB;
+    transition: all .125s ease-in-out;
+}
+.pricing-table tbody tr:hover {
+    background-color: rgba(86, 197, 208, 0.15);
+}
+
+/* For appearance */
+.pricing-table .sticky-wrap {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	margin: 1em 0;
+	width: 100%;
+}
+.pricing-table .sticky-wrap .sticky-thead,
+.pricing-table .sticky-wrap .sticky-col,
+.pricing-table .sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+	.pricing-table .sticky-wrap .sticky-thead {
+		box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+		z-index: 100;
+		width: 100%;/* Force stretch */
+		margin-top: 62px;
+	}
+	.pricing-table .sticky-wrap .sticky-intersect {
+		opacity: 1;
+		z-index: 150;
+
+	}
+		.pricing-table .sticky-wrap .sticky-intersect th {
+			background-color: #56c5d0;
+			color: #6af1ff;
+			display: none;
+		}
+.pricing-table .sticky-wrap td,
+.pricing-table .sticky-wrap th {
+	box-sizing: border-box;
+}
+
+/* Not needed for sticky header/column functionality */
+.pricing-table td.user-name {
+	text-transform: capitalize;
+}
+.pricing-table .sticky-wrap.overflow-y {
+	overflow-y: auto;
+	max-height: 50vh;
+}
+

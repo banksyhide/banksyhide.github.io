@@ -7,12 +7,12 @@ if(isset($_POST['contact_name'])){
 	$response = null;
 	$reCaptcha = new ReCaptcha($secret);
 	// if submitted check response
-	if ($_POST["g-recaptcha-response"]) {
-		$response = $reCaptcha->verifyResponse(
-			$_SERVER["REMOTE_ADDR"],
-			$_POST["g-recaptcha-response"]
-		);
-	}
+//	if ($_POST["g-recaptcha-response"]) {
+//		$response = $reCaptcha->verifyResponse(
+//			$_SERVER["REMOTE_ADDR"],
+//			$_POST["g-recaptcha-response"]
+//		);
+//	}
 	if ($response != null && $response->success) {
          ob_start();
         $to = "n.barahvostova@gmail.com";
@@ -35,10 +35,18 @@ if(isset($_POST['contact_name'])){
          $sub= $_POST["contact_subject"];
           $subject = "Contact Form " . $contact;
          $cn_message= $_POST["contact_message"];
+
          $message = "<h1> Client message from Contact page</h1></br>";
          $message .= "<p>Name: $contact</p>";
          $message .= "<p>Email: $email</p>";
          $message .= "<p>Phone: $phone</p>";
+         $message .= "<p>City they live in: $place</p>";
+         $message .= "<p>Years to file: $yearstofile</p>";
+         $message .= "<p>Need to file HST: $hstfile</p>";
+         $message .= "<p>Need video/phone meeting: $meeting</p>";
+         $message .= "<p>Tax professional: $professional</p>";
+         $message .= "<p>Need to be contacted: $discuss</p>";
+
          $message .= "<p>Subject Chosen: $sub</p>";
          $message .= "<p>Message: $cn_message</p>";
          

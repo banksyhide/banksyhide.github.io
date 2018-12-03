@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/OpenSans-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/OpenSans-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/OpenSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/OpenSans-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans-Light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans-Light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/OpenSans-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('../fonts/OpenSans-Italic.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/OpenSans-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/OpenSans-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/OpenSans-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/OpenSans-Italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #2f303a;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 15.4px;
+}
+.text-italic {
+    font-style: italic;
+    font-weight: 400;
+}
+.text-bold {
+    font-weight: 700;
+}
+.text-accent {
+    color: #15c075;
+}
+.block-accent {
+    background-color: #15c075;
+}
+.btn-primary {
+    background-color: #15c075;
+    border-color: #15c075;
+    font-size: 15px;
+    width: 265px;
+    height: 60px;
+}
+.btn-secondary {
+    background-color: #15c075;
+    border-color: #15c075;
+    width: 135px;
+    height: 35px;
+    font-size: 11px;
+    color: #fff;
+}
+.navbar {
+    margin-bottom: 0;
+}
+#header {
+    background-color: #f3f3f3;
+}
+.header__prod-title {
+    font-size: 26px;
+    line-height: 1.5;
+    padding-left: 30px;
+}
+.header__prod-img img {
+    margin: 10% 25%;
+    width: 50%;
+}
+.header__prod-btn {
+    margin: 0 0 0 30px;
+}
+.header__gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.gallery-item {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.price-type {
+    font-size: 13px;
+}
+.prod-price {
+    font-size: 26px;
+    margin: 25px 0;
+}
+#content {
+
+}
+.shirts {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+}
+.shirt-item {
+    padding: 35px;
+    background-color: #fff;
+    display: flex;
+    align-self: center;
+    align-content: stretch;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 100px;
+    text-align: center;
+    color: #595961;
+}
+.shirt-item:hover {
+    background-color: #f3f3f3;
+}
+.shirt-item__price button {
+    background-color: #15c075;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 35px;
+    border-radius: 30px;
+    border: none;
+    margin: 25px 10%;
+}
+.shirt-item__name {
+    line-height: 1.4;
+}
+
+.gal-item img {
+    width: 100%;
+}
+.advert {
+    border: 4px solid #e8e2e2;
+    padding-left: 10px;
+    position: relative;
+}
+.advert__prod-title {
+    font-size: 26px;
+    line-height: 1.5;
+}
+.advert__prod-btn {
+    margin: 20px 25px 25px 0px;
+}
+.advert__prod-price {
+    font-size: 26px;
+}
+.advert__prod-subtitle {
+    color: #8a8a90;
+    font-size: 11px;
+    margin: 15px 0px;
+}
+.advert__prod-img {
+    position: absolute;
+    left: 200px;
+    top: 75px;
+}
+#footer {
+    margin: 75px 0 0 0;
+    padding: 25px 0;
+    background-color: #f3f3f3;
+    color: #2f303a;
+    bottom: 0;
+}
+.footer__logo {
+    padding: 25px 0;
+}
+.footer__menu {
+    padding: 5px;
+}
+.footer__menu-link {
+    line-height: 25px;
+    color: #2f3035;
+    font-size: 13px;
+}
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+.footer__links-img {
+    fill: #2f3035;
+}
+.footer__links-img:hover {
+    fill: #15c075;
+}
+@media screen and (max-width: 1000px) {
+    .advert {
+        margin-top: 25px;
+    }
+    .shirts {
+        justify-content: center !important;
+    }
+}
+@media screen and (max-width: 767px) {
+    .header__prod-img img {
+        margin: 5% 35%;
+        width: 30%;
+    }
+    .header-prod {
+        text-align: center;
+    }
+    .header__prod-btn {
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+    #footer {
+        text-align: center;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .advert__prod-img {
+        position: absolute;
+        left: 130px;
+        top: 85px;
+        width: 155px;
+    }
+}

@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Segoe UI';
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Bold.eot');
+	src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SegoeUI-Bold.woff') format('woff'),
+	url('../fonts/SegoeUI-Bold.ttf') format('truetype'),
+	url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI.eot');
+	src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SegoeUI.woff') format('woff'),
+	url('../fonts/SegoeUI.ttf') format('truetype'),
+	url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Semibold.eot');
+	src: url('../fonts/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SegoeUI-Semibold.woff') format('woff'),
+	url('../fonts/SegoeUI-Semibold.ttf') format('truetype'),
+	url('../fonts/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../fonts/SegoeUI-Light.eot');
+	src: url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/SegoeUI-Light.woff') format('woff'),
+	url('../fonts/SegoeUI-Light.ttf') format('truetype'),
+	url('../fonts/SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/fontawesome-webfont.woff') format('woff'),
+	url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+	url('../fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.navbar {
+	background-color: #353f46;
+	opacity: .85;
+	padding: 48px 1rem;
+}
+.navbar-brand {
+	padding: 0;
+}
+.nav-item {
+	margin: 0 15px;
+}
+.nav-link {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 18px;
+	border: 2px solid transparent;
+	color: #fff;
+}
+.nav-link:hover {
+	border: 2px solid #4aa2c7;
+	color: #4aa2c7;
+}
+#header {
+	background: url("../img/hero.jpg") no-repeat;
+	background-size: cover;
+	height: auto;
+}
+.header-content {
+	text-align: center;
+	padding: 25% 0;
+}
+.title-bg {
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 42px;
+	color: #fff;
+	padding: 15px;
+	background-color: #353f46;
+	opacity: 0.85;
+	margin-top: 12px;
+	text-align: center;
+	display: inline-block;
+}
+.block-title {
+	font-size: 30px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+#services {
+	background-color: #4bcaff;
+	color: #fff;
+	padding: 80px 0;
+}
+.block-title:after {
+	content: '—';
+	font-weight: 600;
+	display: block;
+}
+.services-item__img {
+	margin: 40px 0 0 0;
+}
+.services-item__subtitle {
+	margin: 22px 0;
+	font-size: 24px;
+	font-weight: 300;
+}
+.services-item__text {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.5;
+}
+#portfolio {
+	background-color: #fff;
+	padding: 80px 0;
+}
+#portfolio img {
+	/*width: 100%;*/
+	height: unset;
+}
+.portfolio__row {
+	margin-top: 30px;
+}
+.portfolio-btn__item {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 18px;
+	border: 2px solid transparent;
+	color: #4bcaff;
+	background-color: transparent;
+}
+.portfolio-btn__item:hover {
+	border: 2px solid #4bcaff;
+	color: #4bcaff;
+	border-radius: 0;
+}
+#default {
+	background-color: #515f67;
+	color: #fff;
+	padding: 80px 0;
+}
+.default-item__text {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.5;
+	margin-top: 15px;
+}
+#twitter {
+	background-color: #4bcaff;
+	color: #fff;
+	padding: 80px 0;
+}
+.twitter__text {
+	font-size: 28px;
+	margin-top: 12px;
+	font-weight: 300;
+	line-height: 2;
+}
+.text-semibold {
+	font-weight: 600;
+}
+#doe {
+	background: url('../img/d--bg.jpg') no-repeat;
+	color: #fff;
+	padding: 80px 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.doe-item__text {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.5;
+	margin-top: 15px;
+}
+.doe-item__social {
+	margin-top: 15px;
+}
+.social-item {
+	padding: 22px;
+	width: 64px;
+	height: 64px;
+	border: 2px solid #fff;
+	display: inline-block;
+	margin-right: 20px;
+}
+.social-item:hover {
+	background-color: #4bcaff;
+	border: 2px solid #4bcaff;
+}
+#testimonials {
+	background-color: #fff;
+	padding: 80px 0;
+}
+.testimonials__text {
+	font-size: 28px;
+	margin-top: 12px;
+	font-weight: 300;
+	line-height: 2;
+}
+.testimonials__author {
+	color: #4bcaff;
+	font-size: 14px;
+	font-weight: 600;
+}

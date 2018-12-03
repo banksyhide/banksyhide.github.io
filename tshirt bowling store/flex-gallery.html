@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>flex gallery</title>
+</head>
+<body>
+<style>
+    .shirts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    .shirt-item {
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 150px;
+    }
+
+    @media screen and (max-width: 750px) {
+        .shirt-item {
+            flex-basis: 150px;
+        }
+    }
+</style>
+<div class="container shirts">
+        <div class="shirt-item col-xs-12 col-sm-4">
+            <div class="shirt-item__img">
+                <a href="#"><img src="img/shirt-blue.png" alt=""></a>
+            </div>
+            <div class="shirt-item__price">
+                <button class="">$425</button>
+            </div>
+            <div class="shirt-item__name">
+                <div class="shirt-item__title">Strict Shirt</div>
+                <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+            </div>
+        </div>
+        <div class="shirt-item col-xs-12 col-sm-4">
+            <div class="shirt-item__img">
+                <a href="#"><img src="img/shirt-black.png" alt=""></a>
+            </div>
+            <div class="shirt-item__price">
+                <button class="">$425</button>
+            </div>
+            <div class="shirt-item__name">
+                <div class="shirt-item__title">Strict Shirt</div>
+                <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+            </div>
+        </div>
+    <div class="shirt-item col-xs-12 col-sm-4">
+        <div class="shirt-item__img">
+            <a href="#"><img src="img/shirt-black.png" alt=""></a>
+        </div>
+        <div class="shirt-item__price">
+            <button class="">$425</button>
+        </div>
+        <div class="shirt-item__name">
+            <div class="shirt-item__title">Strict Shirt</div>
+            <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+        </div>
+    </div>
+    <div class="shirt-item col-xs-12 col-sm-4">
+        <div class="shirt-item__img">
+            <a href="#"><img src="img/shirt-black.png" alt=""></a>
+        </div>
+        <div class="shirt-item__price">
+            <button class="">$425</button>
+        </div>
+        <div class="shirt-item__name">
+            <div class="shirt-item__title">Strict Shirt</div>
+            <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+        </div>
+    </div>
+    <div class="shirt-item col-xs-12 col-sm-4">
+        <div class="shirt-item__img">
+            <a href="#"><img src="img/shirt-black.png" alt=""></a>
+        </div>
+        <div class="shirt-item__price">
+            <button class="">$425</button>
+        </div>
+        <div class="shirt-item__name">
+            <div class="shirt-item__title">Strict Shirt</div>
+            <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+        </div>
+    </div>
+    <div class="shirt-item col-xs-12 col-sm-4">
+        <div class="shirt-item__img">
+            <a href="#"><img src="img/shirt-black.png" alt=""></a>
+        </div>
+        <div class="shirt-item__price">
+            <button class="">$425</button>
+        </div>
+        <div class="shirt-item__name">
+            <div class="shirt-item__title">Strict Shirt</div>
+            <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+        </div>
+    </div>
+    <div class="shirt-item col-xs-12 col-sm-4">
+        <div class="shirt-item__img">
+            <a href="#"><img src="img/shirt-black.png" alt=""></a>
+        </div>
+        <div class="shirt-item__price">
+            <button class="">$425</button>
+        </div>
+        <div class="shirt-item__name">
+            <div class="shirt-item__title">Strict Shirt</div>
+            <div class="shirt-item__subtitle">Soft, Pure Cotton</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.values i{
+  transition: background-color 0.5s;
+    
+}
+.values:hover i{
+  background-color: #ac5aff;
+}
+h3.media-heading:hover { /* ховер для заголовков  */
+  color: #ac5aff;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.media-body ul li:hover { /* ховер для элементов списка */
+  font-weight: bold;
+  font-size: 110%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+}
+.owl-item img { /* задержка для чб фильтра */
+  transition: filter 0.5s;
+}
+.owl-item p,.owl-item h3 { /* задержка для цвета текста */
+  transition: color 0.5s;
+}
+.about-carousel .item:hover img { /* чб фильтр при наведении */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.about-carousel .item .caption:hover h3, .about-carousel .item .caption:hover p {
+  color: #ac5aff;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; /* бордер для текста при наведении */
+}
+/* попап с формой */
+.modal-content input {
+  margin: 5px;
+  float: left;
+  display: inline-block;
+  width: 500px;
+  padding-left: 5px;
+  height: 30px;
+  font-family: Calibri;
+  border: none;
+  border-bottom: 2px solid #ac5aff;
+  background-color: transparent;
+}
+.modal-content {
+  display: inline-block;
+}
+input.orderButton { /* кнопка */
+  background-color: #7B7B7B; 
+  color: #ffffff; 
+  font-size: 15pt;
+  font-weight: 200;
+  border-bottom: 2px solid #ac5aff;
+}
+.orderButton:hover { /* цвет кнопки при наведени */
+  background-color:  #ac5aff;
+ }
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; 
+}
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+}
+#inp-name, #inp-phone, #inp-email, #inp-msg { /* позиционирование иконки в форме  */
+  height: 34px;
+  width: 30px;
+  margin-left: 470px;
+}
+#inp-name { /* иконка1 */
+  background: url(../img/name.png) no-repeat center center;
+}
+#inp-phone { /* иконка2 */
+  margin-top: 4px;
+  background:  url(../img/phone.png) no-repeat center center;
+}
+#inp-email { /* иконка3 */
+  margin-top: 7px;
+  background:  url(../img/email.png) no-repeat center center;
+}
+#inp-msg { /* иконка4 */
+  margin-top: 7px;
+  background:  url(../img/msg.png) no-repeat center center;
+}
+

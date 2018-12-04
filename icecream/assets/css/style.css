@@ -68,7 +68,7 @@ p {
   font-size: 16px; }
 
 #header {
-  background-image: url("/assets/img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -126,7 +126,7 @@ p {
 #about {
   background-color: #fff;
   margin-top: 150px;
-  background-image: url("/assets/img/about-ice-cream-bg.png");
+  background-image: url("../img/about-ice-cream-bg.png");
   background-repeat: no-repeat;
   background-position: -150px; }
   #about .active {
@@ -155,7 +155,7 @@ p {
 #enjoy {
   background-color: #fff;
   margin-top: 150px;
-  background-image: url("/assets/img/about-ice-cream-bg.png");
+  background-image: url("../img/about-ice-cream-bg.png");
   background-repeat: no-repeat;
   background-position: right -150px center; }
   #enjoy h1 {
@@ -203,17 +203,17 @@ p {
     width: 100%;
     height: auto; }
   #gallery .gal-cont-one {
-    background-image: url("/assets/img/gal-spag.jpg");
+    background-image: url("../img/gal-spag.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%; }
   #gallery .gal-cont-two {
-    background-image: url("/assets/img/gal-carb.jpg");
+    background-image: url("../img/gal-carb.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%; }
   #gallery .gal-cont-thr {
-    background-image: url("/assets/img/gal-egg.jpg");
+    background-image: url("../img/gal-egg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%; }

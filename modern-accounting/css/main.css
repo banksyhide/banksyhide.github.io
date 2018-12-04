@@ -2047,3 +2047,101 @@ button.readit:hover {
     margin: 0 10px 0 0;
     height: 15px;
 }
+.navbar-nav .header-phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -20%;
+    top: 0vw;
+}
+.header-phones .h-phone {
+    /*position: absolute;*/
+    padding: 0;
+    display: block;
+    color: #ffffff;
+}
+.header-phones .fa-phone {
+    color: #56c5d0;
+    margin-right: 10px;
+}
+.navbar.top-nav-collapse .navbar-nav .header-phones {
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -20%;
+    top: 2vw;
+}
+.navbar.top-nav-collapse .navbar-nav .header-phones .h-phone {
+    color: #333;
+}
+.main-content h1 {
+    font-size: 2em;
+}
+.about-us-block .left-half {
+    padding:4em 1em 4em 2em;
+    text-align:right;
+    /*max-height: 770px;*/
+}
+
+.about-us-block .right-half {
+    position:relative;
+    overflow: hidden;
+    /*min-height: 670px;*/
+}
+
+.about-us-block .right-half {
+    height: 100%;
+    background: url(../img/right1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-us-block h2 {
+    color: #fff;
+}
+
+.about-us-block p {
+    font-size:1.175em;
+    color:#fff;
+}
+.about-us-row {
+    display: flex;
+    flex-direction: row;
+}
+.about-us-img {
+    padding-right: 0;
+}
+
+ol.breadcrumb {
+    padding: 20px 15px 0;
+    margin-bottom: 20px;
+    list-style: none;
+     background-color: #ffffff;
+    border-radius: 4px;
+}
+ol.breadcrumb .breadcrumb-item a {
+    color: #A2A2A2;
+}
+ol.breadcrumb .breadcrumb-item.active a {
+    color: #56c5d0;
+}
+@media screen and (max-width: 1290px) {
+    .navbar-nav .header-phones, .navbar.top-nav-collapse .navbar-nav .header-phones {
+        right: -15%;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1170px) {
+    .navbar-nav .header-phones, .navbar.top-nav-collapse .navbar-nav .header-phones {
+        display: none;
+    }
+}
+@media screen and (max-width: 991px) {
+    .about-us-row {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -29,18 +29,36 @@ if(isset($_POST['contact_name'])){
         $professional= $_POST["contact_professional"];
         $discuss= $_POST["contact_discuss"];
 
-//        if ($('div.checkbox-group.required :checkbox:checked').length > 0)
-
+        $incomeType = $_POST['incomeType'];
 
          $sub= $_POST["contact_subject"];
           $subject = "Contact Form " . $contact;
          $cn_message= $_POST["contact_message"];
 
-         $message = "<h1> Client message from Contact page</h1></br>";
+         $message = "<h1>Client message from Contact page</h1></br>";
          $message .= "<p>Name: $contact</p>";
          $message .= "<p>Email: $email</p>";
          $message .= "<p>Phone: $phone</p>";
-         $message .= "<p>City they live in: $place</p>";
+         $message .= "<p>City: $place</p>";
+        $message .= "<hr>";
+        $message .= "<h3> Type of income:</h3></br>";
+
+
+        if(empty($incomeType))
+        {
+            $message .= "<p> Client did not choose anything </p>";
+        }
+        else
+        {
+            $N = count($incomeType);
+
+            for($i=0; $i < $N; $i++)
+            {
+                $message .= "<p> $incomeType[$i] </p>";
+            }
+        }
+
+        $message .= "<hr>";
          $message .= "<p>Years to file: $yearstofile</p>";
          $message .= "<p>Need to file HST: $hstfile</p>";
          $message .= "<p>Need video/phone meeting: $meeting</p>";

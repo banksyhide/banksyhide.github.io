@@ -10,6 +10,8 @@
     <meta name="title" content="We Would Love To Hear From You!">
     <meta name="keywords" content="tax services Toronto, Toronto tax filing, personal tax services, online tax filing">
     <title>We Would Love To Hear From You!</title>
+
+    <link rel="icon" type="image/x-icon" href="https://www.yourmodernaccountant.ca/img/favicon.png" />
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/font-awesome.min.css" rel="stylesheet"/><!-- Custom CSS -->
@@ -228,6 +230,12 @@
                           fill="none" stroke="#2B2B2B" stroke-width="2"
                           style="stroke-dashoffset: 0px; stroke-dasharray: 121px, 121px;"></path>
                 </svg>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Contacts</a></li>
+                    </ol>
+                </nav>
             </div>
 
             <p></p>
@@ -279,27 +287,27 @@
                     <div class="form-group">
                         <div class="form-checkbox checkbox-required">Type of income
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-employed" name="" type="checkbox" value="Employed"/>
+                                <input class="" id="contact-employed" name="incomeType[]" type="checkbox" value="Employed"/>
                                 <label for="contact-employed">Employed</label>
                             </div>
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-investment" name="" type="checkbox" value="Investment"/>
+                                <input class="" id="contact-investment" name="incomeType[]" type="checkbox" value="Investment"/>
                                 <label for="contact-investment">investment</label>
                             </div>
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-rental" name="" type="checkbox" value="Rental"/>
+                                <input class="" id="contact-rental" name="incomeType[]" type="checkbox" value="Rental"/>
                                 <label for="contact-rental">Rental Income</label>
                             </div>
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-selfemploy" name="" type="checkbox" value="Self-Employment"/>
+                                <input class="" id="contact-selfemploy" name="incomeType[]" type="checkbox" value="Self-Employment"/>
                                 <label for="contact-selfemploy">Self-Employment Income</label>
                             </div>
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-corporate" name="" type="checkbox" value="Corporate Income"/>
+                                <input class="" id="contact-corporate" name="incomeType[]" type="checkbox" value="Corporate Income"/>
                                 <label for="contact-corporate">Corporate Income</label>
                             </div>
                             <div class="checkbox-inner-container">
-                                <input class="" id="contact-other" name="" type="checkbox" value="Other Income"/>
+                                <input class="" id="contact-other" name="incomeType[]" type="checkbox" value="Other Income"/>
                                 <label for="contact-other">Other Income</label>
                             </div>
                         </div>

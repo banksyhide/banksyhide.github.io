@@ -170,7 +170,7 @@ $(window).load(function() {
 $(document).ready(function(){
     $("#full-form").submit(function(){
         if ($('input:checkbox').filter(':checked').length < 1){
-            alert("Check at least one Game!");
+            alert("Check at least one type of income!");
             return false;
         }
     });

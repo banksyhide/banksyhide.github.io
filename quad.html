@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function discriminant() {
+
+        var a = document.getElementById("a").value;
+//        console.log(a);
+        var b = document.getElementById("b").value;
+        var c = document.getElementById("c").value;
+
+        var res = b * b - 4 * a *c;
+
+        console.log("D = " + res);
+
+        document.getElementById("discrim").innerHTML = 'D = ' + res;
+
+        findXses(a,b,res);
+
+        function findXses(a,b,res) {
+
+            if (res > 0) {
+                function findXOne() {
+                    var xOne = (-b + Math.sqrt(res)) / (2 * a);
+                    console.log("x1:" + xOne);
+                    document.getElementById("xone-html").innerHTML = 'x1: ' + xOne;
+                }
+                findXOne();
+
+                function findXTwo() {
+                    var xTwo = (-b - Math.sqrt(res)) / (2 * a);
+                    console.log("x2:" + xTwo);
+                    document.getElementById("xtwo-html").innerHTML = 'x2: ' + xTwo;
+                }
+                findXTwo();
+            }
+
+            else if (res == 0) {
+                function findX() {
+                    var x = -b / (2 * a);
+                    console.log("x:" + x);
+                    document.getElementById("x-html").innerHTML = 'x: ' + x;
+                }
+                findX();
+            }
+
+            else if (res < 0) {
+                console.log("D < 0");
+                document.getElementById("d-null").innerHTML = 'Ваш дискриминант равен ' + res + ' и он меньше 0.';
+            }
+            else {
+                console.log("Что-то не так.")
+                document.getElementById("message").innerHTML = 'Что-то пошло не так.';
+            }
+
+        }
+
+    }
+
+    discriminant();
+
+</script>
+
+
+<div>
+    <h3>Решение квадратного увравнения вида ax<sup>2</sup> + bx + c </h3>
+</div>
+<input type="text" id="a" required placeholder="Введите a"><span>x<sup>2</sup>+</span><input type="text" id="b" placeholder="Введите b" required><span>x+</span><input type="text" id="c" placeholder="Введите c" required>
+
+<button onclick="discriminant();">Посчитать</button>
+
+<h3>Результат:</h3>
+<p id="discrim"></p>
+<p id="xone-html"></p>
+<p id="xtwo-html"></p>
+<p id="x-html"></p>
+<p id="d-null"></p>
+<p id="message"></p>
+</body>
+</html>

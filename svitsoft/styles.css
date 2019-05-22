@@ -108,7 +108,7 @@ table {
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 16px;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -172,4 +172,73 @@ table {
     line-height: 49px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+.main-animation svg {
+    width: 500px;
+}
+
+/* внешняя стенка закрітій куб */
+
+#_x33_ {
+    display: none;
+}
+/* рахехавшиеся в сторони куби */
+#_x34_{
+    display: none;
+
+}
+/*разехавшиеся в стороні закрітіе куби*/
+#_2 {
+    /*display: none;*/
+
+}
+/*закрытый куб*/
+#_1 {
+    display: none;
+}
+
+/* stage 1 move left side to the right */
+.st59, .st60, .st61, .st62, .st63, .st64, .st65, .st66, .st67, .st68, .st69,
+.st9,
+.st82, .st83, .st84, .st85, .st86, .st87, .st88, .st89,
+.st93, .st90, .st91, .st92, .st94 {
+    animation: moveright 3s ease;
+}
+
+@keyframes moveright {
+    from { transform: translateX(0px) translateY(0px) scale(1); }
+    to { transform: translateX(100px) translateY(0px) scale(1.1);}
+}
+.st72, .st73, .st74, .st75, .st76, .st77, .st78,
+.st95, .st96, .st97, .st98, .st99, .st100, .st101, .st102, .st103,
+.st104, .st105, .st106, .st107, .st108, .st109, .st110, .st111, .st112, .st113, .st114, .st115{
+    animation: moveleft 3s ease;
+}
+
+@keyframes moveleft {
+    from { transform: translateX(0px) translateY(0px) scale(1); }
+    to { transform: translateX(-68px) translateY(32px) scale(.97); }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+    .main-animation svg {
+        max-height: 30vh;
+        padding: 50px 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .navbar {
+        justify-content: space-evenly;
+    }
+    .navbar-brand svg {
+        max-width: 75px;
+    }
+    .nav-link.log-in-link {
+        margin: unset;
+        font-size: 13px;
+    }
+
 }

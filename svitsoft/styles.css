@@ -174,8 +174,25 @@ table {
     color: #FFFFFF;
 }
 .main-animation svg {
-    width: 500px;
+    width: 700px;
 }
+/*  0                       0
+    1s анимация стадия 1    7.14
+    1с стоп после стадии 1  14.28
+    1с анимация стадия2     21.42
+    .5с пульс               24.99
+    1с стоп после стадии2   32.13
+    1с анимация стадия3     39.27
+    1с стоп после стадия 3  46.41
+    1с анимация стадия4     53.55
+    .5с пульс               57.12
+    4с стоп после стадия 4  85.68
+    1с анимация стадия 5    92.82
+    .5 пульс                96.39
+    1с стоп после стадия 5  100
+ */
+
+/* 7.69% - 1с времени */
 
 /* внешняя стенка закрітій куб */
 
@@ -194,7 +211,7 @@ table {
 }
 /*закрытый куб*/
 #_1 {
-    display: none;
+    /*display: none;*/
 }
 
 /* stage 1 move left side to the right */
@@ -204,12 +221,16 @@ table {
 .st82, .st83, .st84, .st85, .st86, .st87, .st88, .st89,
 .st93, .st90, .st91, .st92, .st94 */
 {
-    animation: moveright 3s ease;
+    /*animation: moveright 1s steps(100) 2, moveleft .75s steps(101) 2s 1, movefront .75s steps(102) 2.75s;*/
+    /*transition: all 1s;*/
+    animation: moveright 1s;
 }
 
 @keyframes moveright {
     from { transform: translateX(0px) translateY(0px) scale(1); }
-    to { transform: translateX(100px) translateY(0px) scale(1.1);}
+    /*to { transform: translateX(100px) translateY(0px) scale(1.1);}*/
+    /*to { transform: translateX(30px) translateY(-10px) scale(1.1);}*/
+to translateX(59px) translateY(-34px) translateZ(-19px) scale(1)
 }
 .stage1-to-left
 /*
@@ -217,13 +238,25 @@ table {
 .st95, .st96, .st97, .st98, .st99, .st100, .st101, .st102, .st103,
 .st104, .st105, .st106, .st107, .st108, .st109, .st110, .st111, .st112, .st113, .st114, .st115*/
 {
-    animation: moveleft 3s ease;
+    animation: moveleft 1s ease;
 }
 
 @keyframes moveleft {
     from { transform: translateX(0px) translateY(0px) scale(1); }
-    to { transform: translateX(-68px) translateY(32px) scale(.97); }
+    /*to { transform: translateX(-68px) translateY(30px) scale(.98); }*/
+    to { transform: translateX(-110px) translateY(1px) scale(.98) }
 }
+
+
+/*.stage2-to-front {*/
+    /*animation: movefront 2s ease;*/
+    /*animation-delay: 1s;*/
+/*}*/
+
+/*@keyframes movefront {*/
+    /*from { transform: translateX(-68px) translateY(30px) scale(.98); }*/
+    /*to { transform: translateX(100px) translateY(100px) scale(1.3); }*/
+/*}*/
 
 @media screen and (max-width: 1024px) {
     .container {

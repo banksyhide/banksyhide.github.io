@@ -67,8 +67,15 @@ table {
     margin: 0 auto;
 }
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -76,6 +83,7 @@ table {
 
 .header {
     background: #311795;
+    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.15);
     max-height: 56px;
     display: -webkit-box;
@@ -93,14 +101,26 @@ table {
 }
 
 .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: center;
     align-content: center;
 }
 
 .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -110,7 +130,11 @@ table {
     color: #FFFFFF;
     margin: 0 0 0 16px;
     text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
     z-index: 100;
@@ -152,14 +176,30 @@ table {
     /*background-size: 23px 23px;*/
     background: url(Rectangle.svg) #341a9b no-repeat top left;
     height: calc(100vh - 57px);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .main-title, .main-animation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .main-title {
@@ -202,7 +242,6 @@ table {
 /* рахехавшиеся в сторони куби */
 #_x34_{
     display: none;
-
 }
 /*разехавшиеся в стороні закрітіе куби*/
 #_2 {
@@ -211,180 +250,162 @@ table {
 }
 /*закрытый куб*/
 #_1 {
-    /*display: none;*/
+    display: none;
 }
-
-/* stage 1 move left side to the right */
-.stage1-to-right
-/*.st59, .st60, .st61, .st62, .st63, .st64, .st65, .st66, .st67, .st68, .st69,
-.st9,
-.st82, .st83, .st84, .st85, .st86, .st87, .st88, .st89,
-.st93, .st90, .st91, .st92, .st94 */
-{
-    /*animation: moveright 1s steps(100) 2, moveleft .75s steps(101) 2s 1, movefront .75s steps(102) 2.75s;*/
-    /*transition: all 1s;*/
-    animation: moveright 1s;
-}
-
-@keyframes moveright {
-    from { transform: translateX(0px) translateY(0px) scale(1); }
-    /*to { transform: translateX(100px) translateY(0px) scale(1.1);}*/
-    /*to { transform: translateX(30px) translateY(-10px) scale(1.1);}*/
-/*to translateX(59px) translateY(-34px) translateZ(-19px) scale(1)*/
-}
-.stage1-to-left
-/*
-.st72, .st73, .st74, .st75, .st76, .st77, .st78,
-.st95, .st96, .st97, .st98, .st99, .st100, .st101, .st102, .st103,
-.st104, .st105, .st106, .st107, .st108, .st109, .st110, .st111, .st112, .st113, .st114, .st115*/
-{
-    animation: moveleft 1s ease;
-}
-
-/*@keyframes moveleft {*/
-    /*from { transform: translateX(0px) translateY(0px) scale(1); }*/
-    /*!*to { transform: translateX(-68px) translateY(30px) scale(.98); }*!*/
-    /*to { transform: translateX(-110px) translateY(1px) scale(.98) }*/
-/*}*/
 
 .red-bottom-left {
+    -webkit-animation: red-bottom-left--anim 14s;
     animation: red-bottom-left--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
 
-@keyframes red-bottom-left--anim {
+@-webkit-keyframes red-bottom-left--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(58px) translateY(-30px) scale(1.1); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% { transform: translateX(39px) translateY(-25px) scale(1.24); }
+    21.42% {transform: translateX(53px) translateY(-25px)  scale(1.1);}
+    24.99% {transform: translateX(58px) translateY(-30px) scale(1.1);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(-28px) translateY(-21px) scale(1.25);}
+    96.39% {transform: translateX(58px) translateY(-30px) scale(1.1);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .blue-top-left {
+    -webkit-animation: blue-top-left--anim 14s;
     animation: blue-top-left--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
 
-@keyframes blue-top-left--anim {
+@-webkit-keyframes blue-top-left--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(57px) translateY(-32px) scale(1.11); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% { transform: translateX(38px) translateY(-28px) scale(1.25); }
+    21.42% {transform: translateX(52px) translateY(-37px) scale(1.11);}
+    24.99% {transform: translateX(57px) translateY(-32px) scale(1.11);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(-28px) translateY(-109px) scale(1.2);}
+    96.39% {transform: translateX(57px) translateY(-32px) scale(1.11);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
+
 
 .green-bottom-left {
+    -webkit-animation: green-bottom-left--anim 14s;
     animation: green-bottom-left--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
 
-@keyframes green-bottom-left--anim {
+@-webkit-keyframes green-bottom-left--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
-    7.14% { transform: translateX(58px) translateY(-30px) scale(1.1); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    7.14% {transform: translateX(58px) translateY(-30px) scale(1.1); }
+    14.28% { transform: translateX(116px) translateY(21px) scale(1.1); }
+    21.42% {transform: translateX(58px) translateY(-30px) scale(1.075); }
+    24.99% {transform: translateX(58px) translateY(-30px) scale(1.1);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(58px) translateY(63px) scale(1);}
+    96.39% {transform: translateX(58px) translateY(-30px) scale(1.1);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .red-top-left {
+    -webkit-animation: red-top-left--anim 14s;
     animation: red-top-left--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes red-top-left--anim {
+@-webkit-keyframes red-top-left--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(58px) translateY(-28px) scale(1.1); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% { transform: translateX(105px) translateY(4px) scale(1.167);}
+    21.42% { transform: translateX(58px) translateY(-28px) scale(1.08);}
+    24.99% {transform: translateX(58px) translateY(-28px) scale(1.1);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(70px) translateY(-15px) scale(.93);}
+    96.39% {transform: translateX(58px) translateY(-28px) scale(1.1);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .blue-top-right {
+    -webkit-animation: blue-top-right--anim 14s;
     animation: blue-top-right--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes blue-top-right--anim {
-    0% { transform: translateX(0px) translateY(0px) scale(1); }
+@-webkit-keyframes blue-top-right--anim {
+    0% { transform: translateX(0px) translateY(0px) scale(1);}
     7.14% { transform: translateX(-110px) translateY(1px) scale(.98); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% {transform: translateX(-149px) translateY(9px) scale(1.1); }
+    21.42% { transform: translateX(-110px) translateY(-1px) scale(.969);}
+    24.99% {transform: translateX(-110px) translateY(1px) scale(.98);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(-11px) translateY(-53px) scale(1);}
+    96.39% {transform: translateX(-110px) translateY(1px) scale(.98);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .green-top-right {
+    -webkit-animation: green-top-right--anim 14s;
     animation: green-top-right--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes green-top-right--anim {
-    0% { transform: translateX(0px) translateY(0px) scale(1); }
+@-webkit-keyframes green-top-right--anim {
+    0% {  transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(-110px) translateY(1px) scale(.98); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% { transform: translateX(-60px) translateY(43px) scale(1); }
+    21.42% { transform: translateX(-111px) translateY(-1px) scale(.97);}
+    24.99% {transform: translateX(-110px) translateY(1px) scale(.98);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(66px) translateY(0px) scale(.9);}
+    96.39% {transform: translateX(-110px) translateY(1px) scale(.98);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .green-bottom-right {
+    -webkit-animation: green-bottom-right--anim 14s;
     animation: green-bottom-right--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes green-bottom-right--anim {
+@-webkit-keyframes green-bottom-right--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(-110px) translateY(1px) scale(.98); }
-    14.28% { }
-    21.42% {}
+    14.28% {transform: translateX(-149px) translateY(9px) scale(1.1);  }
+    21.42% { transform: translateX(-107px) translateY(-2px) scale(0.96);}
     24.99% {}
     32.13% {}
     39.27% {}
@@ -392,30 +413,32 @@ table {
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(-63px) translateY(23px) scale(1.1);}
+    96.39% {transform: translateX(-110px) translateY(1px) scale(.98);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 .blue-bottom-right {
+    -webkit-animation: blue-bottom-right--anim 14s;
     animation: blue-bottom-right--anim 14s;
+    animation-timing-function: ease-in-out;
 }
 
-@keyframes blue-bottom-right--anim {
+@-webkit-keyframes blue-bottom-right--anim {
     0% { transform: translateX(0px) translateY(0px) scale(1); }
     7.14% { transform: translateX(-110px) translateY(1px) scale(.98); }
-    14.28% { }
-    21.42% {}
-    24.99% {}
+    14.28% { transform: translateX(-60px) translateY(43px) scale(1);}
+    21.42% {transform: translateX(-109px) translateY(-4px) scale(.965);}
+    24.99% {transform: translateX(-115px) translateY(6px) scale(.98);}
     32.13% {}
     39.27% {}
     46.41% {}
     53.55% {}
     57.12% {}
     85.68% {}
-    92.82% {}
-    96.39% {}
-    100% {}
+    92.82% {transform: translateX(60px) translateY(96px) scale(.907);}
+    96.39% {transform: translateX(-110px) translateY(1px) scale(.98);}
+    100% {transform: translateX(0px) translateY(0px) scale(1);}
 }
 
 @media screen and (max-width: 1024px) {
@@ -429,6 +452,8 @@ table {
 }
 @media screen and (max-width: 425px) {
     .navbar {
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
     }
     .navbar-brand svg {

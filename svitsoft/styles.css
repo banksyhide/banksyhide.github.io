@@ -222,7 +222,7 @@ table {
     1с стоп после стадии2   32.13
     1с анимация стадия3     39.27
     1с стоп после стадия 3  46.41
-    1с анимация стадия4     46.66
+    1с анимация стадия4     46.91
     .5с пульс               57.12
     4с стоп после стадия 4  85.68
     1с анимация стадия 5    92.82
@@ -232,19 +232,18 @@ table {
 
 /* 7.69% - 1с времени */
 
-/* внешняя стенка закрітій куб */
+/* внешняя стенка закрытый куб */
 
 #_x33_ {
     display: none;
 }
-/* рахехавшиеся в сторони куби */
+/* разъехавшиеся в сторони кубы */
 #_x34_{
     display: none;
 }
-/*разехавшиеся в стороні закрітіе куби*/
+/*разехавшиеся в стороны закрытые кубы*/
 #_2 {
     /*display: none;*/
-
 }
 /*закрытый куб*/
 #_1 {
@@ -268,7 +267,7 @@ table {
     32.13% {-webkit-transform: translateX(39px) translateY(-25px) scale(1.24);transform: translateX(39px) translateY(-25px) scale(1.24);} /* cub stays opened to front */
     39.27% {-webkit-transform: translateX(58px) translateY(-30px) scale(1.1);transform: translateX(58px) translateY(-30px) scale(1.1);} /* cub closed */
     46.41% {-webkit-transform: translateX(-28px) translateY(-21px) scale(1.25);transform: translateX(-28px) translateY(-21px) scale(1.25);} /* cub opened all sides */
-    46.66% {-webkit-transform: translateX(-28px) translateY(-26px) scale(1.25);transform: translateX(-28px) translateY(-26px) scale(1.25);} /* pulse */
+    46.91% {-webkit-transform: translateX(-28px) translateY(-26px) scale(1.25);transform: translateX(-28px) translateY(-26px) scale(1.25);} /* pulse */
     57.12% {-webkit-transform: translateX(-28px) translateY(-21px) scale(1.25);transform: translateX(-28px) translateY(-21px) scale(1.25);} /* cub opened all sides */
     85.68% {-webkit-transform: translateX(-28px) translateY(-21px) scale(1.25);transform: translateX(-28px) translateY(-21px) scale(1.25);} /* cub stays opened all sides */
     92.82% {-webkit-transform: translateX(58px) translateY(-30px) scale(1.1);transform: translateX(58px) translateY(-30px) scale(1.1);} /* cub closes */
@@ -294,7 +293,7 @@ table {
     32.13% {-webkit-transform: translateX(38px) translateY(-28px) scale(1.25);transform: translateX(38px) translateY(-28px) scale(1.25);}
     39.27% {-webkit-transform: translateX(57px) translateY(-32px) scale(1.11);transform: translateX(57px) translateY(-32px) scale(1.11); }
     46.41% {-webkit-transform: translateX(-28px) translateY(-109px) scale(1.2);transform: translateX(-28px) translateY(-109px) scale(1.2);}
-    46.66% {-webkit-transform: translateX(-28px) translateY(-114px) scale(1.2);transform: translateX(-28px) translateY(-114px) scale(1.2);}
+    46.91% {-webkit-transform: translateX(-28px) translateY(-104px) scale(1.2);transform: translateX(-28px) translateY(-104px) scale(1.2);}
     57.12% {-webkit-transform: translateX(-28px) translateY(-109px) scale(1.2);transform: translateX(-28px) translateY(-109px) scale(1.2);}
     85.68% {-webkit-transform: translateX(-28px) translateY(-109px) scale(1.2);transform: translateX(-28px) translateY(-109px) scale(1.2);}
     92.82% {-webkit-transform: translateX(57px) translateY(-32px) scale(1.11);transform: translateX(57px) translateY(-32px) scale(1.11);}
@@ -321,7 +320,7 @@ table {
     32.13% {-webkit-transform: translateX(116px) translateY(21px) scale(1.1);transform: translateX(116px) translateY(21px) scale(1.1);}
     39.27% {-webkit-transform: translateX(58px) translateY(-30px) scale(1.1);transform: translateX(58px) translateY(-30px) scale(1.1);}
     46.41% {-webkit-transform: translateX(58px) translateY(63px) scale(1);transform: translateX(58px) translateY(63px) scale(1);}
-    46.66% {-webkit-transform: translateX(58px) translateY(57px) scale(1);transform: translateX(58px) translateY(57px) scale(1);}
+    46.91% {-webkit-transform: translateX(58px) translateY(68px) scale(1);transform: translateX(58px) translateY(68px) scale(1);}
     57.12% {-webkit-transform: translateX(58px) translateY(63px) scale(1);transform: translateX(58px) translateY(63px) scale(1);}
     85.68% {-webkit-transform: translateX(58px) translateY(63px) scale(1);transform: translateX(58px) translateY(63px) scale(1);}
     92.82% {-webkit-transform: translateX(58px) translateY(-30px) scale(1.1);transform: translateX(58px) translateY(-30px) scale(1.1);}
@@ -346,7 +345,7 @@ table {
     32.13% {-webkit-transform: translateX(105px) translateY(4px) scale(1.167);transform: translateX(105px) translateY(4px) scale(1.167);}
     39.27% {-webkit-transform: translateX(58px) translateY(-28px) scale(1.1);transform: translateX(58px) translateY(-28px) scale(1.1);}
     46.41% {-webkit-transform: translateX(70px) translateY(-15px) scale(.93);transform: translateX(70px) translateY(-15px) scale(.93);}
-    46.66% {-webkit-transform: translateX(70px) translateY(-20px) scale(.93);transform: translateX(70px) translateY(-20px) scale(.93);}
+    46.91% {-webkit-transform: translateX(70px) translateY(-10px) scale(.93);transform: translateX(70px) translateY(-10px) scale(.93);}
     57.12% {-webkit-transform: translateX(70px) translateY(-15px) scale(.93);transform: translateX(70px) translateY(-15px) scale(.93);}
     85.68% {-webkit-transform: translateX(70px) translateY(-15px) scale(.93);transform: translateX(70px) translateY(-15px) scale(.93);}
     92.82% {-webkit-transform: translateX(58px) translateY(-28px) scale(1.1);transform: translateX(58px) translateY(-28px) scale(1.1);}
@@ -371,7 +370,7 @@ table {
     32.13% {-webkit-transform: translateX(-149px) translateY(9px) scale(1.1);transform: translateX(-149px) translateY(9px) scale(1.1);}
     39.27% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
     46.41% {-webkit-transform: translateX(-11px) translateY(-53px) scale(1);transform: translateX(-11px) translateY(-53px) scale(1);}
-    46.66% {-webkit-transform: translateX(-11px) translateY(-58px) scale(1);transform: translateX(-11px) translateY(-58px) scale(1);}
+    46.91% {-webkit-transform: translateX(-11px) translateY(-48px) scale(1);transform: translateX(-11px) translateY(-48px) scale(1);}
     57.12% {-webkit-transform: translateX(-11px) translateY(-53px) scale(1);transform: translateX(-11px) translateY(-53px) scale(1);}
     85.68% {-webkit-transform: translateX(-11px) translateY(-53px) scale(1);transform: translateX(-11px) translateY(-53px) scale(1);}
     92.82% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
@@ -396,7 +395,7 @@ table {
     32.13% {-webkit-transform: translateX(-60px) translateY(43px) scale(1);transform: translateX(-60px) translateY(43px) scale(1);}
     39.27% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
     46.41% {-webkit-transform: translateX(66px) translateY(0px) scale(.9);transform: translateX(66px) translateY(0px) scale(.9);}
-    46.66% {-webkit-transform: translateX(66px) translateY(-5px) scale(.9);transform: translateX(66px) translateY(-5px) scale(.9);}
+    46.91% {-webkit-transform: translateX(66px) translateY(5px) scale(.9);transform: translateX(66px) translateY(5px) scale(.9);}
     57.12% {-webkit-transform: translateX(66px) translateY(0px) scale(.9);transform: translateX(66px) translateY(0px) scale(.9);}
     85.68% {-webkit-transform: translateX(66px) translateY(0px) scale(.9);transform: translateX(66px) translateY(0px) scale(.9);}
     92.82% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
@@ -421,7 +420,7 @@ table {
     32.13% {-webkit-transform: translateX(-149px) translateY(9px) scale(1.1);transform: translateX(-149px) translateY(9px) scale(1.1);}
     39.27% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
     46.41% {-webkit-transform: translateX(-63px) translateY(23px) scale(1.1);transform: translateX(-63px) translateY(23px) scale(1.1);}
-    46.66% {-webkit-transform: translateX(-63px) translateY(18px) scale(1.1);transform: translateX(-63px) translateY(18px) scale(1.1);}
+    46.91% {-webkit-transform: translateX(-63px) translateY(18px) scale(1.1);transform: translateX(-63px) translateY(18px) scale(1.1);}
     57.12% {-webkit-transform: translateX(-63px) translateY(23px) scale(1.1);transform: translateX(-63px) translateY(23px) scale(1.1);}
     85.68% {-webkit-transform: translateX(-63px) translateY(23px) scale(1.1);transform: translateX(-63px) translateY(23px) scale(1.1);}
     92.82% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
@@ -446,7 +445,7 @@ table {
     32.13% {-webkit-transform: translateX(-60px) translateY(43px) scale(1);transform: translateX(-60px) translateY(43px) scale(1);}
     39.27% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
     46.41% {-webkit-transform: translateX(60px) translateY(96px) scale(.907);transform: translateX(60px) translateY(96px) scale(.907);}
-    46.66% {-webkit-transform: translateX(60px) translateY(91px) scale(.907);transform: translateX(60px) translateY(91px) scale(.907);}
+    46.91% {-webkit-transform: translateX(60px) translateY(91px) scale(.907);transform: translateX(60px) translateY(91px) scale(.907);}
     57.12% {-webkit-transform: translateX(60px) translateY(96px) scale(.907);transform: translateX(60px) translateY(96px) scale(.907);}
     85.68% {-webkit-transform: translateX(60px) translateY(96px) scale(.907);transform: translateX(60px) translateY(96px) scale(.907);}
     92.82% {-webkit-transform: translateX(-110px) translateY(1px) scale(.98);transform: translateX(-110px) translateY(1px) scale(.98);}
